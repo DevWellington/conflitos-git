@@ -12,12 +12,30 @@ git commit -m "add style css"
 git add .
 git commit -m "add scripts javascript"
 vim index.html
+	<html>
+		<head>
+			<title>Teste de conflitos do Git</title>
+		</head>
+		<body>
+			<h1>Teste de conflitos no Git</h1>
+		</body>
+	</html>
+	
 git commit -a -m "add conteudo"
 git checkout -b branch_teste
+	vim index.html
+		<div>
+			Inicio dos testes
+		</div>
+	
 	git add index.html
 	git commit -m "Add div"
 	git checkout master
 vim index.html
+	<div id"container">
+		<p>Inicio dos Testes</p>
+	</div>
+	
 git commit -a -m "add conteudo in master"
 git merge branch_teste
 	Auto-merging index.html
